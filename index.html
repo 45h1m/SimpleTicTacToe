@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <title>ADYMAZA</title>
+</head>
+<body onload="load();">
+    <div align="center">
+        <div onclick="closeOptions();" align="center" id="menu">
+            <div id="menu_">
+                <i onclick="window.location.href='https://www.facebook.com/adymazaa';" class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i onclick="window.location.href='https://www.instagram.com/adymaza_';" class="fa fa-instagram" aria-hidden="true"></i>
+                <i onclick="window.location.href='https://www.youtube.com/adymaza';" class="fa fa-youtube-play" aria-hidden="true"></i>
+                <h3>Developer</h3>              
+            </div>
+        </div>
+        <div id="result">
+            <h2 id="msg">Player X wins</h2>
+        </div>
+        <h1>Tik_Tac_Toe</h1>
+        <div id="playzone">
+            <div class="vertical" id="vertical"></div>
+            <div class="horizonal"></div>
+            <div class="vertical"></div>
+            <div class="horizonal" id="horizonal"></div>
+            <div id="gameLine"></div>
+            <div  class="row">
+                <div onclick="playThis(this);" id="0" class="iconArea" ></div>
+                <div onclick="playThis(this);" id="1" class="iconArea" ></div>
+                <div onclick="playThis(this);" id="2" class="iconArea" ></div>
+            </div>
+            <div  class="row">
+                <div onclick="playThis(this);" id="3" class="iconArea" ></div>
+                <div onclick="playThis(this);" id="4" class="iconArea" ></div>
+                <div onclick="playThis(this);" id="5" class="iconArea" ></div>
+            </div>
+            <div  class="row">
+                <div onclick="playThis(this);" id="6" class="iconArea" ></div>
+                <div onclick="playThis(this);" id="7" class="iconArea" ></div>
+                <div onclick="playThis(this);" id="8" class="iconArea" ></div>
+            </div>
+            <br><br><br>
+            <div id="xPoints">
+                <i id="icon" class="fa fa-times"></i>
+                <i id="icon" class="fa fa-times"></i>
+                <i id="icon" class="fa fa-times"></i>
+                <i id="icon" class="fa fa-times"></i>
+                <i id="icon" class="fa fa-times"></i>
+            </div>
+            <div id="oPoints">
+                <i id="icon2" class="fa fa-circle-o"></i>
+                <i id="icon2" class="fa fa-circle-o"></i>
+                <i id="icon2" class="fa fa-circle-o"></i>
+                <i id="icon2" class="fa fa-circle-o"></i>
+                <i id="icon2" class="fa fa-circle-o"></i>
+            </div>
+            <div id="replay_div">
+                <h5>Tic_Tac_Toe</h5>
+            </div>
+        </div>
+        <div onclick="botClick();" id="botMode">
+            <img id="bot" src="1538298822.svg">
+        </div>
+    </div>
+    <div id="foot" align="center">
+        <div onclick="closeOptions();" id="footer">
+            <i id="setting_icon" class="fa fa-cog" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+</html>
